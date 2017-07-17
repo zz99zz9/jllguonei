@@ -1,0 +1,90 @@
+<div class="mask"></div>
+<!--#include file="openfrom.asp"-->
+<!---->
+<div class="c"></div>
+<div class="footbar hidden-xs">
+<div class="container">
+    <div class="footbarl col-md-8"><a href="index.asp"><img src="xgwl/img/logo.svg" class="blogo"></a><div class="bnav"><a href="index.asp">首页</a>   |   <a href="4.asp">新房</a>   |   <a href="3.asp">个人委托</a>   |   <a href="2.asp">热点资讯</a>   |  <a href="5.asp">豪宅顾问</a><br><a href="http://www.joneslanglasalle.com.cn/china/zh-cn">仲量联行（中国）</a>   |   <a href="http://www.jll.com/">仲量联行（全球）</a>   |   <a href="http://www.jllresidential.cn/intl/">仲量联行国际住宅</a></div></div>
+    <div class="footbarr col-md-4"><div class="btit">联系我们</div><div class="c"></div>
+   <!-- <img src="xgwl/img/temp/sns6.png" class="bsns tra6 b_w tf360"><a href="http://weibo.com/p/1006063053812775" target="_blank"><img src="xgwl/img/temp/sns5.png" class="bsns tra6 b_w tf360"></a><img src="xgwl/img/temp/sns4.png" class="bsns tra6 b_w tf360"><img src="xgwl/img/temp/sns2.png" class="bsns tra6 b_w tf360"><img src="xgwl/img/temp/sns1.png" class="bsns tra6 b_w tf360">--></div>
+
+</div>
+</div>
+<div class="footer">
+
+Copyright © 2015-2017 Jones Lang <span class='hidden-xs'>LaSalle, IP, Inc. All Rights Reserved.  沪ICP备：15009917号</span>
+
+</div>
+<!--右边悬浮-->
+<ul class="servr tra hidden-xs">
+<li class="se1 b_h" onclick="window.open('http://weibo.com/p/1006063053812775');"></li>
+<li class="se2 b_h"><div class="se2hover"></div></li>
+<li class="se3 b_h" onclick="window.location.href='tel:4008181133';"><a href='tel:4008181133'><div class="se3hover"></div></a></li>
+</ul>
+<div class="footerbtn hidden-lg hidden-md hidden-sm "><a href="tel:400-818-1133">拨打电话</a><a href="javascript:openfrom('20165new.pdf');">免费咨询</a></div>
+<!--底部加载-->
+
+<script src="xgwl/js/lib/jquery.js"></script>
+<script src="xgwl/js/lib/bootstrap.min.js"></script>
+<script src="xgwl/js/lib/wow.min.js"></script>
+<script src="xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
+<script src="xgwl/js/lib/slides-1.1.1-min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+</script>
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 10) {
+            $(".navbar").addClass("leavetop");
+            $(".serr").addClass("seer2");
+            $(".fanglist").addClass("f2");
+        } else {
+            $(".navbar").removeClass("leavetop");
+             $(".serr").removeClass("seer2");
+              $(".fanglist").removeClass("f2");
+        }
+    });
+</script>
+<script src="xgwl/js/base.js"></script>
+<script src="xgwl/js/dfrom.js"></script>
+<script>
+//搜索时input鼠标按下抬起效果
+input("#wrint1");
+input("#wrint2");
+input("#wrint3");
+input("#wrint4");
+input("#wrint5");
+input("#wrint6");
+input("#skey");
+input("#okey");
+function input(v){
+    var n = $(v);
+    var val=n.val();
+    n.focus(function(){
+        if(n.val()==val){
+            $(this).val('');
+            $(this).css("color","#000");
+        }
+    }).blur(function(){
+        if (n.val()==""){
+            $(this).val(val);
+            $(this).css("color","#4d4d4d");
+        }
+    })
+};
+$(document).ready(function(){
+    if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
+    {   
+       $(".navbar-brand img").attr("src","xgwl/img/logo.svg");
+ 
+    }else{
+   $(".navbar-brand img").attr("src","xgwl/img/logo3.svg");
+    }
+    
+})
+</script>
+
+</body>
+</html>
