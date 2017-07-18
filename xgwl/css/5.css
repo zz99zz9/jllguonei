@@ -299,6 +299,7 @@
 .wl .ltit{border-left:5px solid #C92A24;height:18px;padding-left:15px;line-height:18px;font-size:16px;font-weight:bold;}
 .wl .ltxt{line-height:150%;color:#707070;font-size:12px;}
 .wl .ltxt img{width:100%;}
+.wr .ltxtcc{width:285px;}
 .wr .stitline{height:2px;background:#e5e5e5;position:relative;margin:30px auto 180px auto;}
 .wr .stitline .stit{display:block;width:240px;background:#fff;position:absolute;top:-10px;left:50%;margin-left:-120px;text-align:center;font-size:14px;}
 .wr .stitline .leftbtn,.wr .stitline .rightbtn{display:block;height:100px;width:140px;bottom:-150px;position:absolute;color:#7f7f7f;text-align:center;line-height:30px;font-size:18px;}

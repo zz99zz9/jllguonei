@@ -328,12 +328,14 @@ h2 .pao{position:absolute;top:-100px;left:0px;}
 
 
 	<!---->
+	<div class="ltxtcc">
 <div class="ltxt"><div class='ltxtinfo' ><img src="xgwl/img/qr.gif" style="margin-bottom:10px;"/><br />扫一扫 关注JLL</div></div>
     <div class="stitline" > <span class="stit">对此房源感兴趣？<a class="red" href="mailto:Sherry.liu@ap.jll.com">联系我们！</a></span>
 
       <div class="leftbtn b_h hidden-xs"><i></i><span>400-818-1133</span></div>
       <div class="rightbtn b_h hidden-xs" onClick="openfrom('20165new.pdf');"><i></i><span>留言咨询</span></div>
-      </div>
+	  </div>
+	</div>
 	<!---->
 	</div>
      <div class="c"></div>
