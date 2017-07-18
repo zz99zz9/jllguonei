@@ -272,7 +272,7 @@ h2 .pao{position:absolute;top:-100px;left:0px;}
     window.onload = initialize;
     </script>
 <!-- 百度地图地图容器-->
-    <div id="map" style="width:620px;height:420px"></div>
+    <div id="map" style="width:620px;height:420px;margin-bottom:50px;"></div>
 </div>
 <!---->
 <!--原二维码和两个button位置-->
