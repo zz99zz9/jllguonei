@@ -52,7 +52,7 @@
 .thumbPrev{left:0;top:0;background:url(../img/Yprev.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src="../img/Yprev.png") ; _background:none;}
 .thumbNext{left:0;bottom:0;background:url(../img/Ynext.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src="../img/Ynext.png") ; _background:none;}
 /*download  by www.sucaijiayuan.com*/
-.ltxtinfo{margin:80px 0 80px 260px;width:110px;text-align:center;}
+.ltxtinfo{margin:80px 0 80px 80px;width:110px;text-align:center;}
 @media (max-width: 768px) {
     .ltxtinfo{margin:50px auto;}
     .change li{width:100%;}
