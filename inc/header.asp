@@ -36,6 +36,7 @@
                 <li class="XGli"><a href="newhouse.asp" class="s_link2">新房 </a></li>
                  <li class="XGli"><a href="entrust.asp" class="s_link2">个人委托</a></li>
                 <li class=" XGli"><a href="news.asp" class="s_link2">热点资讯</a>  </li>
+                <li class=" XGli"><a href="life_judge.asp" class="s_link2">生活品鉴</a>  </li>
                 <li class=" XGli"><a href="adviser.asp" class="s_link2" >豪宅顾问</a> </li>
                
               <!--  <li class=" XGli"><a href="http://www.jllresidential.cn/intl" target="_blank" class="s_link2" >国际住宅</a> </li>-->
