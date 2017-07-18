@@ -299,16 +299,16 @@
 .wl .ltit{border-left:5px solid #C92A24;height:18px;padding-left:15px;line-height:18px;font-size:16px;font-weight:bold;}
 .wl .ltxt{line-height:150%;color:#707070;font-size:12px;}
 .wl .ltxt img{width:100%;}
-.wl .stitline{height:2px;background:#e5e5e5;position:relative;margin:30px auto 180px auto;}
-.wl .stitline .stit{display:block;width:240px;background:#fff;position:absolute;top:-10px;left:50%;margin-left:-120px;text-align:center;font-size:14px;}
-.wl .stitline .leftbtn,.wl .stitline .rightbtn{display:block;height:100px;width:140px;bottom:-150px;position:absolute;color:#7f7f7f;text-align:center;line-height:30px;font-size:18px;}
-.wl .stitline .leftbtn{left:60px;}
-.wl .stitline .rightbtn{right:60px;}
-.wl .stitline .leftbtn i,.wl .stitline .rightbtn i{display:block;width:56px;height:56px;margin-left:42px;margin-top:5px;margin-bottom:8px;}
-.wl .stitline .leftbtn i{background-image:url(../img/ico_tel2.png);}
-.wl .stitline .rightbtn i{background-image:url(../img/ico_book.png);}
-.wl .stitline .smh{display:block;position:absolute;top:-60px;left:190px;color:#000;font-size:13px;text-decoration:underline;}
-.wl .stitline .smh:hover{color:#f00;}
+.wr .stitline{height:2px;background:#e5e5e5;position:relative;margin:30px auto 180px auto;}
+.wr .stitline .stit{display:block;width:240px;background:#fff;position:absolute;top:-10px;left:50%;margin-left:-120px;text-align:center;font-size:14px;}
+.wr .stitline .leftbtn,.wr .stitline .rightbtn{display:block;height:100px;width:140px;bottom:-150px;position:absolute;color:#7f7f7f;text-align:center;line-height:30px;font-size:18px;}
+.wr .stitline .leftbtn{left:60px;}
+.wr .stitline .rightbtn{right:60px;}
+.wr .stitline .leftbtn i,.wr .stitline .rightbtn i{display:block;width:56px;height:56px;margin-left:42px;margin-top:5px;margin-bottom:8px;}
+.wr .stitline .leftbtn i{background-image:url(../img/ico_tel2.png);}
+.wr .stitline .rightbtn i{background-image:url(../img/ico_book.png);}
+.wr .stitline .smh{display:block;position:absolute;top:-60px;left:190px;color:#000;font-size:13px;text-decoration:underline;}
+.wr .stitline .smh:hover{color:#f00;}
 
 /*房源介绍页*/
 .wr h1{font-size:24px;color:#000;margin-bottom:20px;}
