@@ -12,7 +12,7 @@ if Not smalloRs.Eof then
   Content = Content & "</tr>"	
   smalloRs.MoveNext
   End if
-  Next  
+  Next
 Content = Content & "</Table>"	
 sHowJmlpKinds = Content
 End Function
@@ -344,7 +344,7 @@ posql="select Top 1 * from [prod] where classid="&NewsType&" and prod_id>"&NewsI
 
 PoRs.Open posql,conn,1,1
   if Not PoRs.eof then 
-  Content =Content & "<a Href='newsdetail.Asp?prod_id="&PoRs("prod_id")&"' title='"&PoRs("prod_name")&"'>"&left(PoRs("prod_name"),17)&"</a>"
+  Content =Content & "<a Href='newsdetail.Asp?id="&PoRs("prod_id")&"' title='"&PoRs("prod_name")&"'>"&left(PoRs("prod_name"),17)&"</a>"
   Else
   Content =Content & "没有了!"
   End if
@@ -359,7 +359,7 @@ set NoRs=Server.CreateObject("ADODB.Recordset")
 NoRs.Open "select Top 1 * from [prod] where classid="&NewsType&" and prod_id<"&NewsId&" order by prod_id desc",conn,1,1
   if Not NoRs.eof then 
 
-  Content =Content & "<a Href='newsdetail.Asp?prod_id="&NoRs("prod_id")&"' title='"&NoRs("prod_name")&"'>"&left(NoRs("prod_name"),17)&"</a>"
+  Content =Content & "<a Href='newsdetail.Asp?id="&NoRs("prod_id")&"' title='"&NoRs("prod_name")&"'>"&left(NoRs("prod_name"),17)&"</a>"
   Else
   Content =Content & "没有了!"
   End if
