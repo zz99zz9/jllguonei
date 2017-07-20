@@ -145,9 +145,20 @@
     <div class="container">
         <div class="row">
 <div class="titline"><div class="tit tit3">热点资讯 <img src="xgwl/img/bline.png" class="hidden-xs"></div><div class="txt hidden-xs">news<br>专业洞察把握行业脉搏</div> <a href="2.asp" class="more hidden-xs"> &gt;</a></div>
-
-<div class="n1 b_h wow fadeInUp"><img src="xgwl/img/temp/p6.jpg" class="tra6"><span class="tit">生活 · 品鉴  |  在陆家嘴，选择与影响世界的人为邻</span></span></div><div class="n2 b_h wow fadeInUp"><img src="xgwl/img/temp/p7.jpg" class="tra6"><span class="tit">最新活动  |  直通澳洲One Stop AUS 2016第一季</span></span></div><div class="n3 b_h wow fadeInUp"><img src="xgwl/img/temp/p8.jpg" class="tra6"><span class="tit">生活 · 品鉴  |  仲量联行赞助上海佘山高尔夫俱乐部年度......</span></span></div>
-
+<%
+set rsnew=Server.CreateObject("ADODB.Recordset")
+sqlnew="select top 3 * from [prod] where classid=15 order by oid desc,prod_id desc"
+rsnew.Open sqlnew,conn,1,1
+i=1
+do while not rsnew.eof 
+%>
+<a class="n<%=i%> b_h wow fadeInUp" href="newsdetail.asp?id=<%=rsnew("prod_id")%>"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/temp/p6.jpg<%else%><%=rsnew("prod_pic")%><%end if%>" class="tra6"><span class="tit"><%=rsnew("prod_name")%></span></a>
+<%
+rsnew.movenext
+              i=i+1
+              loop
+rsnew.close
+  set rsnew=nothing%>
         </div>
     </div>
 </div>
