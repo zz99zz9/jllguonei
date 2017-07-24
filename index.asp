@@ -148,6 +148,7 @@
 <%
 set rsnew=Server.CreateObject("ADODB.Recordset")
 sqlnew="select top 3 * from [prod] where classid=15 order by oid desc,prod_id desc"
+'and elite=true 
 rsnew.Open sqlnew,conn,1,1
 i=1
 do while not rsnew.eof 

@@ -4,7 +4,7 @@
 <div class="c"></div>
 <div class="footbar hidden-xs">
 <div class="container">
-    <div class="footbarl col-md-8"><a href="index.asp"><img src="xgwl/img/logo.svg" class="blogo"></a><div class="bnav"><a href="index.asp">首页</a>   |   <a href="4.asp">新房</a>   |   <a href="3.asp">个人委托</a>   |   <a href="2.asp">热点资讯</a>   |  <a href="5.asp">豪宅顾问</a><br><a href="http://www.joneslanglasalle.com.cn/china/zh-cn">仲量联行（中国）</a>   |   <a href="http://www.jll.com/">仲量联行（全球）</a>   |   <a href="http://www.jllresidential.cn/intl/">仲量联行国际住宅</a></div></div>
+    <div class="footbarl col-md-8"><a href="index.asp"><img src="xgwl/img/logo.svg" class="blogo"></a><div class="bnav"><a href="index.asp">首页</a>   |   <a href="newhouse.asp">新房</a>   |   <a href="entrust.asp">个人委托</a>   |   <a href="news.asp">热点资讯</a>   |  <a href="adviser.asp">豪宅顾问</a><br><a href="use.asp">使用条款</a>   |   <a href="Privacy.asp">隐私条款</a><br><a href="http://www.joneslanglasalle.com.cn/china/zh-cn">仲量联行（中国）</a>   |   <a href="http://www.jll.com/">仲量联行（全球）</a>   |   <a href="http://www.jllresidential.cn/intl/">仲量联行国际住宅</a></div></div>
     <div class="footbarr col-md-4"><div class="btit">联系我们</div><div class="c"></div>
    <!-- <img src="xgwl/img/temp/sns6.png" class="bsns tra6 b_w tf360"><a href="http://weibo.com/p/1006063053812775" target="_blank"><img src="xgwl/img/temp/sns5.png" class="bsns tra6 b_w tf360"></a><img src="xgwl/img/temp/sns4.png" class="bsns tra6 b_w tf360"><img src="xgwl/img/temp/sns2.png" class="bsns tra6 b_w tf360"><img src="xgwl/img/temp/sns1.png" class="bsns tra6 b_w tf360">--></div>
 
