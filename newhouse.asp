@@ -175,7 +175,7 @@ if i<4 and mystr(i)<>"" then
 
     </div>
     </span>
-    </div><div class="nphone"><%if rs("jgzj")=0 then%><b class="b1">待定</b><%else%><span class="jiage">¥<%=rs("jgzj")%><b class="b1">万起</b><%end if%><!--<b class="b2">(每平)</b>--></span><div class="c hidden-xs"></div><a href="housedetails.asp?id=<%=rs("articleid")%>" class="nbtn">查看更多</a></div></li>
+    </div><div class="nphone"><%if rs("jgzj")=0 then%><span class="jiage"><b class="b1">价格待定</b></span><%else%><span class="jiage">¥<%=rs("jgzj")%><b class="b1">万起</b><%end if%><!--<b class="b2">(每平)</b>--></span><div class="c hidden-xs"></div><a href="housedetails.asp?id=<%=rs("articleid")%>" class="nbtn">查看更多</a></div></li>
 <%
 rs.movenext
 i=i+1
