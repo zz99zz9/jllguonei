@@ -282,7 +282,12 @@ h2 .pao{position:absolute;top:-100px;left:0px;}
 </div>
      <div class="pr wr">
      <span class="tit"><%=rs("title")%></span>
-     <span class="jiage">约¥<%=rs("jgzj")%><%if rs("jgjj")<>"" and rs("jgjj")<>"0" then%>-<%=rs("jgjj")%><%end if%>万起</span>
+     <span class="jiage">
+		<%if rs("jgzj")=0 then%>
+		价格待定
+		<%else%>
+		约¥<%=rs("jgzj")%><%if rs("jgjj")<>"" and rs("jgjj")<>"0" then%>-<%=rs("jgjj")%><%end if%>万起
+	<%end if%></span>
      <span class="ntxt"><span class="ntxtl">区域<br>类别<br>户型<br></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br><%=rs("clbname")%><br><%
                                                                                                                                                         mystr=split(rs("clxid"),",")
                                                                                                                                                           for i=0 to ubound(mystr)

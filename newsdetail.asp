@@ -165,7 +165,8 @@ do while not ors.eof%>
 <a href="housedetails.asp?id=<%=ors("articleid")%>" target="_blank"><img src="<%=ors("defaultpicurl")%>" class="wgw b_h" /></a>
     <div class="wgwtxt fz12"><span class="b fz14"><%=ors("bigclassname")%>&nbsp;<%=ors("smallclassname")%></span>
       <div class="c"></div>
-      约人民币 <span class="red"><%=ors("jgzj")%></span> 万<br />
+      <%if ors("jgzj")=0 then%>价格待定<%else%>
+      约人民币 <span class="red"><%=ors("jgzj")%></span> 万<%end if%><br />
       <span class="more"><a href="newhouse.asp?id=<%=ors("articleid")%>">查看更多</a></span></div>
       <div class="bline"></div>
     <%
