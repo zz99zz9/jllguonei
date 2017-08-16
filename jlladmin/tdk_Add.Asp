@@ -102,6 +102,6 @@ classid=request.QueryString("lmid")%>
 //导航菜单
 
 $(".nav1").addClass('active');
-$(".nav1-4").addClass('active');
+$(".nav1-5").addClass('active');
 </script>
 <script type="text/javascript" src="ajax/tdk.js"></script>
