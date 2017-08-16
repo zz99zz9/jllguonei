@@ -2,6 +2,10 @@
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
+<%
+dim tdkid
+tdkid=1
+%>
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/1.css"/>
     <style>
