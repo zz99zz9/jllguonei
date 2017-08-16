@@ -8,9 +8,9 @@ call SafeRequest(pro_id)
 set rsnew=Server.CreateObject("ADODB.Recordset")
 sql="select * from [prod] where prod_id="&pro_id
 rsnew.Open sql,conn,1,1
-title=rsnew("prod_name")
-if rsnew("keywords")<>"" then siteKey=rsnew("keywords")
-if rsnew("description")<>"" then SiteCont=rsnew("description")%>
+t=rsnew("prod_name")
+if rsnew("keywords")<>"" then k=rsnew("keywords")
+if rsnew("description")<>"" then d=rsnew("description")%>
 <!--#include file="inc/header.asp"-->
 <!--row2:搜索条件-->
 
@@ -19,7 +19,6 @@ if rsnew("description")<>"" then SiteCont=rsnew("description")%>
   <div class="position"><a href="index.asp">JLL</a> &gt; <a href="news.asp">热点资讯  &gt; <a href="#"><%=rsnew("classname")%>
   </a> </div>
 </div>
-
 
 <style>
 .ltxt .smh{font-size:15px;font-weight:bold;color:#00F;}

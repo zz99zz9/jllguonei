@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
-    <title>国内房产置业，国内购房买房，国内房产投资-JLL 仲量联行</title>
+    <title><%=t%></title>
+<meta name="Keywords" content="<%=k%>" />
+<meta name="Description" content="<%=d%>" />
+
     <link rel="icon" href="icon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="xgwl/css/lib/bootstrap.min.css" />
     <link rel="stylesheet" href="xgwl/css/lib/animate.css"/>

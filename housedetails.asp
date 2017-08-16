@@ -2,8 +2,7 @@
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
-<%id=request.QueryString("id")
-%>
+<%id=request.QueryString("id")%>
 <%set Rs=Server.CreateObject("ADODB.Recordset")
 if id="" then
   sql="select * from [Table_Product]"
@@ -13,6 +12,11 @@ if id="" then
 '  sql=sql+"and SmallClassId="&mapid
   sql=sql+" order by Orderid"
  Rs.Open sql,conn,1,1%>
+ <%dim t,d,k
+ t=rs("title")
+ d=rs("Description")
+ k=rs("Keywords")
+ %>
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/5.css"/>
     <link rel="stylesheet" href="xgwl/css/fyed.css"/>

@@ -20,6 +20,7 @@
                           <li class="nav1-2"><a class="" href="sitemanager.asp">管理员管理</a></li>
                           <li class="nav1-3"><a class="" href="sitespase.asp">空间使用信息</a></li>
                           <li class="nav1-4"><a class="" href="lyb.asp">网站报名管理</a></li>
+                          <li class="nav1-5"><a class="" href="tdk_list.asp">网站SEO设置</a></li>
                           <!-- <li class="nav1-4"><a class="" href="siteinfo.asp">服务器情况</a></li>-->
                       </ul>
                   </li>
