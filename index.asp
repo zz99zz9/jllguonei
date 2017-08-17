@@ -133,7 +133,7 @@ tdkid=1
                         do while not rs.eof %>
 <div class="col-md-4 wow fadeInUp">
     <div class="bborder b_c tra" onclick="location='housedetails.asp?id=<%=rs("articleid")%>'">
-    <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt">南京西路商圈摩登公寓</span>
+    <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt"><%=left(RemoveHTML(rs("content1")),30)%>……</span>
 </div>
 </div>
 <%rs.movenext
