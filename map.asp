@@ -6,6 +6,9 @@
 dim tdkid
 tdkid=1
 mapid=request.QueryString("v")
+if mapid<>29 and mapid<>15 then
+mapid=29
+end if
 %>
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/5.css"/>
