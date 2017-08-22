@@ -3,6 +3,11 @@
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
 <!--#include file="inc/header.asp"-->
+<%
+dim tdkid
+tdkid=5
+%>
+<!--#include file="./inc/tdk.asp"-->
     <link rel="stylesheet" href="xgwl/css/2.css"/>
 <!--广告部份-->
 <%cid=request.QueryString("cid")

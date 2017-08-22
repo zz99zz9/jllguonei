@@ -5,7 +5,9 @@
 <%
 dim tdkid
 tdkid=1
+
 %>
+<!--#include file="./inc/tdk.asp"-->
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/1.css"/>
     <style>
@@ -108,7 +110,7 @@ tdkid=1
                         do while not rs.eof %>
             <div class="col-md-6 wow fadeInUp">
              <div class="bborder b_c tra" onclick="location='housedetails.asp?id=<%=rs("articleid")%>'">
-            <img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=left(RemoveHTML(rs("content1")),30)%>……</span>
+            <img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
             </div>
             </div>
             <%rs.movenext
@@ -133,7 +135,7 @@ tdkid=1
                         do while not rs.eof %>
 <div class="col-md-4 wow fadeInUp">
     <div class="bborder b_c tra" onclick="location='housedetails.asp?id=<%=rs("articleid")%>'">
-    <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt"><%=left(RemoveHTML(rs("content1")),25)%>……</span>
+    <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
 </div>
 </div>
 <%rs.movenext

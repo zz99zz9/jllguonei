@@ -40,7 +40,7 @@ classid=request.QueryString("lmid")%>
     <label for="title" class="col-sm-2 control-label text-right xglab">Title</label>
     <div class="col-sm-7 row">
         <div class="col-sm-12">
-      <input type="text" name="title" class="form-control" id="title" placeholder="请输入推广标题" value="上海建工海外地产中心">
+      <input type="text" name="title" class="form-control" id="title" placeholder="请输入推广标题" value="JLL国内地产中心">
       </div>
     </div>
   </div>

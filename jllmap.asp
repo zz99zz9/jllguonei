@@ -3,6 +3,7 @@
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
 <!--#include file="inc/header.asp"-->
+
     <link rel="stylesheet" href="xgwl/css/5.css"/>
     <style>
     html{overflow: hidden;}
@@ -93,13 +94,19 @@ rs.close
 
 <!--part1-->
 <div class="fanglist tra">
+        <%
+        dim i
+        dim sql,rs
+        
+        sql="select count(*) as num From [Table_Product] where bigclassid=34 "
+        Set rs= Server.CreateObject("ADODB.Recordset")
+        rs.open sql,conn,1,1
+        %>
     <div class="jjia"><div class="tit"><em>上海</em><br><span></span></div><!--<div class="rtxt">80000 <span>元/平</span></div>--></div>
-    <div class="seain">为您找共 4 套在售房源<!--<ul class="TAB_CLICK"><li class="on b_h">默认</li><li class=" b_h">最新</li><li class=" b_h">总价</li></ul>--></div>
+    <div class="seain">为您找共 <%=rs("num")%> 套在售房源<!--<ul class="TAB_CLICK"><li class="on b_h">默认</li><li class=" b_h">最新</li><li class=" b_h">总价</li></ul>--></div>
     <div class="slist">
         <ul class="fang2">
 <%
-dim i
-dim sql,rs
 
 sql="select * From [Table_Product] where ArticleID>0"
 sql=sql & "and bigclassid=34 order by orderid desc,ArticleID desc"
@@ -125,36 +132,45 @@ rs.open sql,conn,1,1
 function hello(h){
  $(".jjia .tit em").html(h);
  var dqdq=$(".jjia .tit em").html();
- if (dqdq=="卢湾"){
-  location.href="map.asp?v=23";
+ if (dqdq=="新江湾城"){
+          location.href="map.asp?v=1";
+ }else if (dqdq=="苏州河"){
+          location.href="map.asp?v=2";
+ }else if (dqdq=="北外滩"){
+          location.href="map.asp?v=3";
+ }else if (dqdq=="花木"){
+          location.href="map.asp?v=4";
+ }else if (dqdq=="南卢湾"){
+          location.href="map.asp?v=5";
+ }else if (dqdq=="徐汇滨江"){
+          location.href="map.asp?v=6";
+ }else if (dqdq=="新外滩"){
+          location.href="map.asp?v=7";
+ }else if (dqdq=="虹桥"){
+         location.href="map.asp?v=8";
+ }else if (dqdq=="古北"){
+          location.href="map.asp?v=9";
+ }else if (dqdq=="静安"){
+          location.href="map.asp?v=10";
+ }else if (dqdq=="华山路"){
+          location.href="map.asp?v=11";
  }else if (dqdq=="徐汇"){
-   location.href="map.asp?v=24";
-   }else if (dqdq=="华山路"){
-         location.href="map.asp?v=26";
-       }else if (dqdq=="南外滩"){
-                location.href="map.asp?v=15";
-               }else if (dqdq=="新外滩"){
-                                  location.href="map.asp?v=27";
-                               }else if (dqdq=="陆家嘴"){
-                               //  $(".jjia .rtxt").html("96000 <span>元/平</span>");
-                                 location.href="map.asp?v=29";
-                               }else if (dqdq=="老西门"){
-                                 location.href="map.asp?v=22";
-                                  }else if (dqdq=="古北"){
-                               location.href="map.asp?v=28";
-                                }else if (dqdq=="静安"){
-                              location.href="map.asp?v=25";
-         }else if (dqdq=="虹桥"){
-         location.href="map.asp?v=13";
-         }else if (dqdq=="联洋"){
-                   location.href="map.asp?v=37";
-                   }else if (dqdq=="碧云"){
-                    location.href="map.asp?v=30";
-                    }else if (dqdq=="新江湾城"){
-                                         location.href="map.asp?v=31";
-                                         }else{
-            location.href="map.asp?v=29";
-          }
+          location.href="map.asp?v=12";
+ }else if (dqdq=="卢湾"){
+          location.href="map.asp?v=13";
+ }else if (dqdq=="老西门"){
+          location.href="map.asp?v=14";
+ }else if (dqdq=="南外滩"){
+          location.href="map.asp?v=15";
+ }else if (dqdq=="陆家嘴"){
+          location.href="map.asp?v=16";//  $(".jjia .rtxt").html("96000 <span>元/平</span>");
+ }else if (dqdq=="联洋"){
+         location.href="map.asp?v=17";
+ }else if (dqdq=="碧云"){
+         location.href="map.asp?v=18";
+ }else{
+            location.href="map.asp?v=16";
+       }
 
 
 

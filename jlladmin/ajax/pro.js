@@ -48,6 +48,8 @@ function update(cg){
 	*/
 	clbname=$("#clb").val().split(";")[0];
 	clbid=$("#clb").val().split(";")[1];
+	crqname=$("#crq").val().split(";")[0];
+	crqid=$("#crq").val().split(";")[1];
 	content1=$("#content1").val();
 	content2=$("#content2").val();
 	//二次新加
@@ -104,6 +106,8 @@ var clxid =[];//定义一个数组
 	  jgjj:jgjj,
 	  cfjname:cfjname,
 	  cfjid:cfjid,
+	  crqname:crqname,
+	  crqid:crqid,
 //	  clxname:clxname,
 	  clxid:clxid,
 	  clbname:clbname,

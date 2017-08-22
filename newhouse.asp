@@ -4,8 +4,9 @@
 <!--#include file="inc/Inc.Asp"-->
 <%
 dim tdkid
-tdkid=1
+tdkid=2
 %>
+<!--#include file="./inc/tdk.asp"-->
 <%dim bc,sc,fj,lx,lb,order,page
 key=request.QueryString("key")
 bc=request.QueryString("bc")

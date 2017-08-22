@@ -3,6 +3,11 @@
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
 <!--#include file="inc/header.asp"-->
+<%
+dim tdkid
+tdkid=6
+%>
+<!--#include file="./inc/tdk.asp"-->
     <link rel="stylesheet" href="xgwl/css/5.css"/>
     <style>.nphone {    background:url("xgwl/img/tel.png") no-repeat;}</style>
 <!--广告部份-->

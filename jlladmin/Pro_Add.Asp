@@ -135,12 +135,12 @@ rs.close
     </div>
     </div>
   </div>
-<!--    <div class="form-group row">
+    <div class="form-group row">
     <label for="Product_Id" class="col-sm-2 control-label text-right xglab">项目概述</label>
     <div class="col-sm-7">
       <textarea name="Product_Id" class="form-control" id="Product_Id" maxlength="200"></textarea>
     </div>
-  </div>-->
+  </div>
   
       <div class="form-group row">
     <label for="DefaultPicUrl" class="col-sm-2 control-label text-right xglab">列表图片</label>
@@ -241,6 +241,26 @@ rs.close
 %>
 </select>
         </div>
+        <div class="col-sm-2">
+            <select class="form-control" id="crq"><option value="未设置;0">所属热区</option>
+                    <%
+    
+    sql="select * from [class_rq] order by oid desc"
+    rs.open sql,conn,1,1
+    if not(rs.eof and rs.bof) then
+    
+    do while not rs.eof
+    %>
+                <option value="<%=rs("CName")%>;<%=rs("Cid")%>" ><%=rs("CName")%></option>
+                <%
+    rs.movenext
+    loop
+    end if
+    rs.close
+    
+    %>
+    </select>
+            </div>
    </div>
   </div>
   <div class="form-group row">

@@ -6,9 +6,7 @@
 dim tdkid
 tdkid=1
 mapid=request.QueryString("v")
-if mapid<>29 and mapid<>15 then
-mapid=29
-end if
+
 %>
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/5.css"/>
@@ -98,32 +96,44 @@ rs.close
 </div>
 </div>
 <!--广告部份-->
-
-<!--part1-->
-<div class="fanglist tra">
-    <div class="jjia"><div class="tit"><em>上海</em><br><span></span></div><!--<div class="rtxt">80000 <span>元/平</span></div>--></div>
-    <div class="seain">为您找共 4 套在售房源<!--<ul class="TAB_CLICK"><li class="on b_h">默认</li><li class=" b_h">最新</li><li class=" b_h">总价</li></ul>--></div>
-    <div class="slist">
-        <ul class="fang2">
 <%
 dim i
 dim sql,rs
+Set rs= Server.CreateObject("ADODB.Recordset")
+sql="select count(*) as num From [Table_Product] where crqid='"&mapid&"'"
+response.write sql
+rs.open sql,conn,1,1
+num=rs("num")
+%>
+<%
+
 
 sql="select * From [Table_Product] where ArticleID>0"
-sql=sql & "and bigclassid=34 order by orderid desc,ArticleID desc"
+sql=sql & " and crqid='"&mapid&"' order by orderid desc,ArticleID desc"
 Set rs= Server.CreateObject("ADODB.Recordset")
 rs.open sql,conn,1,1
 %>
+<!--part1-->
+<div class="fanglist tra">
+    <div class="jjia"><div class="tit"><em><%call showName("class_rq",mapid,"Cid","Cname")%></em><br><span></span></div><!--<div class="rtxt">80000 <span>元/平</span></div>--></div>
+    <div class="seain">为您找共 <%=num%> 套在售房源<!--<ul class="TAB_CLICK"><li class="on b_h">默认</li><li class=" b_h">最新</li><li class=" b_h">总价</li></ul>--></div>
+    <div class="slist">
+        <%if rs.bof and rs.eof then%>
+        该热区暂无房源
+        <%else%>
+        <ul class="fang2">
+
  <%do while not rs.eof%>
         <li class=" b_c tra" onclick="location.href='housedetails.asp?id=<%=rs("articleid")%>'"><img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span><span class="jiage2"><%=rs("jgzj")%>万</span></li>
 
 <%rs.movenext
 
     loop
+
 	rs.close
 	set rs=nothing%>
         </ul>
-
+<%end if%>
 
 </div>
 

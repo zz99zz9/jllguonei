@@ -14,16 +14,17 @@ body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;}
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=CB2ede775afeb6e413abd40261396a69"></script>
 <title>添加自定义覆盖物</title>
 <%
-mapid=request.QueryString("mapid")
+'mapid=request.QueryString("mapid")
 
-set sRs=Server.CreateObject("ADODB.Recordset")
-ssql="select * from [Table_ProSmallclass] where SmallClassId="&mapid&"  order by Orderid"
-response.write ssql
-sRs.Open ssql,conn,1,1
-center=sRs("Szb")
-sRs.close
-set sRs=nothing
-if center="" then center="121.477288,31.224149"
+'set sRs=Server.CreateObject("ADODB.Recordset")
+'ssql="select * from [Table_ProSmallclass] where SmallClassId="&mapid&"  order by Orderid"
+'response.write ssql
+'sRs.Open ssql,conn,1,1
+'center=sRs("Szb")
+'sRs.close
+'set sRs=nothing
+'if center="" then center="121.477288,31.224149"
+center="121.477288,31.224149"
 %>
 
 <style type="text/css">

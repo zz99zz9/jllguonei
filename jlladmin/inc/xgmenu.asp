@@ -50,6 +50,7 @@
                           <li class="nav3-5"><a class="" href="class_lb.asp">房源类别</a></li>
                           <li class="nav3-6"><a class="" href="class_fj.asp">价格区间</a></li>
                           <li class="nav3-7"><a class="" href="class_td.asp">房源特点</a></li>
+                          <li class="nav3-8"><a class="" href="class_rq.asp">房源热区</a></li>
 <!--<li class="nav3-8"><a class="" href="class_kfs.asp">开发商</a></li>-->
                       </ul>
                   </li>
