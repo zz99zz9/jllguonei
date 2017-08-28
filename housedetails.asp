@@ -13,7 +13,7 @@ if id="" then
   sql=sql+" order by Orderid"
  Rs.Open sql,conn,1,1%>
  <%dim t,d,k
- t=rs("title")
+ t=rs("wz")
  d=rs("Description")
  k=rs("Keywords")
  %>
