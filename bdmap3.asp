@@ -246,45 +246,23 @@ var json=markerArr[i];
   point[i] = new window.BMap.Point(pintx, pinty);
   marker[i] = new window.ComplexCustomOverlay(point[i],txt,txt);
   mp.addOverlay(marker[i]);
-//    mp.addOverlay(new ComplexCustomOverlay(new BMap.Point(pintx, pinty), txt, txt));
-//markerArr[i]
+
 
 (function(){
 var index = i;
 marker[i].addEventListener('click',function(e){
-  console.log("#_#" + markerArr[index].fid);
   parent.location.href="housedetails.asp?id="+markerArr[index].fid;
 })
-//var _iw = createInfoWindow(i);
-//alert(mycom)
-//var _marker =mycom;
-/*mp.addEventListener('click',function(e){
-  console.log("#_#" + markerArr[index].fid);
-  console.log(markerArr[index]);
-  })*/
-   /*gavin*/
+
 
 
 })()
-/*gavin code 20170412*/
-/*(function() {
-              var thePoint = points[i];
-              marker.addEventListener("click",function(){
-                  showInfo(this,thePoint);
-              });*/
-/*gavin*/
+
 
 
 
 }
 
-  /*gavin code*/
 
-//  mp.addEventListener('click',function(e){
-//console.log("#_#"+ fid );
-//mp.openInfoWindow("ff");
-//parent.location.href="6.asp";
-// alert('点击坐标: '+ e.point.lng +', '+ e.point.lat);
- // });
 
 </script>
