@@ -109,18 +109,13 @@ tdkid=1
                         rs.Open sql,conn,1,1
                         do while not rs.eof %>
             <div class="col-md-6 wow fadeInUp">
-             <div class="bborder b_c tra" onclick="location='housedetails.asp?id=<%=rs("articleid")%>'">
+             <a class="bborder b_c tra" href="location='housedetails.asp?id=<%=rs("articleid")%>'" style="color:#333;">
             <img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
-            </div>
+             </a>
             </div>
             <%rs.movenext
               i=i+1
               loop%>
-<!--            <div class="col-md-6 wow fadeInUp">
-                <div class="bborder b_c tra" onclick="location='6.asp'">
-                <img src="xgwl/img/temp/p2.jpg"><span class="tit">凯旋滨江园</span><span class="txt">来自何方，无碍傲立何处。小面积全配高区户型，不限购菁英景观私寓</span>
-                </div>
-                </div>-->
         </div>
     </div>
 </div>
@@ -134,9 +129,9 @@ tdkid=1
                         rs.Open sql,conn,1,1
                         do while not rs.eof %>
 <div class="col-md-4 wow fadeInUp">
-    <div class="bborder b_c tra" onclick="location='housedetails.asp?id=<%=rs("articleid")%>'">
+    <a class="bborder b_c tra" href="housedetails.asp?id=<%=rs("articleid")%>" style="color:#333;">
     <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
-</div>
+    </a>
 </div>
 <%rs.movenext
               i=i+1
