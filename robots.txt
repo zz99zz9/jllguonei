@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow: /jlladmin/
+Sitemap: http://www.jllresidential.cn/guonei/sitemap.xml  
