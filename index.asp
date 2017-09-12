@@ -1,4 +1,4 @@
-<!--#include file="inc/conn.asp"-->
+﻿<!--#include file="inc/conn.asp"-->
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
@@ -109,7 +109,7 @@ tdkid=1
                         rs.Open sql,conn,1,1
                         do while not rs.eof %>
             <div class="col-md-6 wow fadeInUp">
-             <a class="bborder b_c tra" href="location='housedetails.asp?id=<%=rs("articleid")%>'" style="color:#333;">
+             <a class="bborder b_c tra" href="housedetails.asp?id=<%=rs("articleid")%>" style="color:#333;">
             <img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
              </a>
             </div>
