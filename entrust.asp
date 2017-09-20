@@ -113,7 +113,7 @@ if lx<>0 and lx<>"" then sql=sql+" and clxid like '%"&lx&"%'"
 if lb<>0 and lb<>"" then sql=sql+" and clbid='"&lb&"'"
 if key<>"" then sql=sql+" and (title like '%"&key&"%' or content like '%"&key&"%' or content1 like '%"&key&"%')"
  sql=sql+" and ckfsid='1'"
-sql=sql+" order by "
+sql=sql+" order by OrderId desc,"
 select case order
 	case 0
 	sql=sql+"Elite,"
@@ -130,7 +130,7 @@ select case order
 	case 6
 	sql=sql+"updatetime,"
 end select
-sql=sql+"OrderId desc,articleid desc"
+sql=sql+"articleid desc"
 'response.write sql
 rs.Open sql,conn,1,1%>
 <!--part1-->
