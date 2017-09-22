@@ -106,10 +106,8 @@ rs.open sql,conn,1,1
 num=rs("num")
 %>
 <%
-
-
 sql="select * From [Table_Product] where ArticleID>0"
-sql=sql & " and crqid='"&mapid&"' order by orderid desc,ArticleID desc"
+sql=sql & " and crqid='"&mapid&"' order by gid desc, orderid desc,ArticleID desc"
 Set rs= Server.CreateObject("ADODB.Recordset")
 rs.open sql,conn,1,1
 %>
@@ -124,8 +122,7 @@ rs.open sql,conn,1,1
         <ul class="fang2">
 
  <%do while not rs.eof%>
-        <li class=" b_c tra" onclick="location.href='housedetails.asp?id=<%=rs("articleid")%>'"><img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span><span class="jiage2"><%=rs("jgzj")%>万</span></li>
-
+        <li class=" b_c tra" onclick="location.href='housedetails.asp?id=<%=rs("articleid")%>'"><%if rs("gid")<>"" and rs("gid")<>0 then%><i class="hot"></i><%end if%><img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span><span class="jiage2"><%=rs("jgzj")%>万</span></li>
 <%rs.movenext
 
     loop
