@@ -149,7 +149,7 @@ rs.Open sql,conn,1,1%>
     i=0
     do while not rs.eof and i<rs.PageSize
     %>
-    <li><a href="housedetails.asp?id=<%=rs("articleid")%>" class="fpic"><%if rs("gid")<>"" and rs("gid")<>0 then%><i class="hot"></i><%end if%><img src="<%=rs("defaultpicurl")%>" class="fangpic b_h"></a><div class="ninfo"><a  href="housedetails.asp?id=<%=rs("articleid")%>" class="ntit b_h"><%=rs("title")%></a><span class="ntxt"><span class="ntxtl">区域<br>户型<br>豪宅类型<br></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br>
+    <li><a href="housedetails.asp?id=<%=rs("articleid")%>" class="fpic"><%if rs("gid")<>"" and rs("gid")<>0 then%><i class="hot"></i><%end if%><img src="<%=rs("defaultpicurl")%>" class="fangpic b_h"></a><div class="ninfo"><a  href="housedetails.asp?id=<%=rs("articleid")%>" class="ntit b_h ellipsis"><%=rs("title")%></a><span class="ntxt"><span class="ntxtl">区域<br>户型<br>豪宅类型<br></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br>
 <%
     mystr=split(rs("clxid"),",")
       for i=0 to ubound(mystr)
