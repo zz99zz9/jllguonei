@@ -107,22 +107,18 @@ rs.close
     <div class="slist">
         <ul class="fang2">
 <%
-
 sql="select * From [Table_Product] where ArticleID>0"
-sql=sql & "and bigclassid=34 order by orderid desc,ArticleID desc"
+sql=sql & "and bigclassid=34 order by gid desc, orderid desc,ArticleID desc"
 Set rs= Server.CreateObject("ADODB.Recordset")
 rs.open sql,conn,1,1
 %>
  <%do while not rs.eof%>
-        <li class=" b_c tra" onclick="location.href='housedetails.asp?id=<%=rs("articleid")%>'"><%if rs("gid")<>"" and rs("gid")<>0 then%><i class="hot"></i><%end if%><%=rs("gid")%><img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span><span class="jiage2"><%=rs("jgzj")%>万</span></li>
-
+        <li class=" b_c tra" onclick="location.href='housedetails.asp?id=<%=rs("articleid")%>'"><%if rs("gid")<>"" and rs("gid")<>0 then%><i class="hot"></i><%end if%><img src="<%=rs("defaultpicurl")%>"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span><span class="jiage2"><%=rs("jgzj")%>万</span></li>
 <%rs.movenext
-
     loop
 	rs.close
 	set rs=nothing%>
         </ul>
-
 
 </div>
 
