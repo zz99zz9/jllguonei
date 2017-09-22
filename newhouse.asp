@@ -82,7 +82,6 @@ if order="" then order=0
 <%do while not rs.eof%>
      <a href="?<%call seaurl(bc,sc,fj,rs("cid"),lb,order,1)%>" <%call ison(lx,rs("cid"))%>><%=rs("cname")%></a>
        <%rs.movenext
-
     loop
 	rs.close
 	set rs=nothing%>
@@ -112,7 +111,6 @@ if fj<>0 and fj<>"" then sql=sql+" and cfjid='"&fj&"'"
 if lx<>0 and lx<>"" then sql=sql+" and clxid like '%"&lx&"%'"
 if lb<>0 and lb<>"" then sql=sql+" and clbid='"&lb&"'"
 if key<>"" then sql=sql+" and (title like '%"&key&"%' or content like '%"&key&"%' or content1 like '%"&key&"%')"
-
  sql=sql+" and ckfsid='2'"
 sql=sql+" order by OrderId desc,"
 select case order
@@ -132,7 +130,6 @@ select case order
 	sql=sql+"updatetime,"
 end select
 sql=sql+"articleid desc"
-
 rs.Open sql,conn,1,1%>
 <!--part1-->
 <div class="part1">
@@ -172,8 +169,6 @@ if i<4 and mystr(i)<>"" then
 
     <% end if
      next %>
-
-
     </div>
     </span>
     </div><div class="nphone"><%if rs("jgzj")=0 then%><span class="jiage"><b class="b1">价格待定</b></span><%else%><span class="jiage">¥<%=rs("jgzj")%><b class="b1">万起</b><%end if%><!--<b class="b2">(每平)</b>--></span><div class="c hidden-xs"></div><a href="housedetails.asp?id=<%=rs("articleid")%>" class="nbtn">查看更多</a></div></li>
