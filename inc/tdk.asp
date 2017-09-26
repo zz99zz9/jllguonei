@@ -7,6 +7,3 @@ k=tdkrs("k")
 tdkrs.close
 set tdkrs=nothing
 %>
-    <title><%=t%></title>
-    <meta name="Keywords" content="<%=k%>"/>
-    <meta name="Decription" content="<%=d%>"/>
