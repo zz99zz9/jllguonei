@@ -7,7 +7,7 @@ dim tdkid
 tdkid=1
 
 %>
-<!--#include file="./inc/tdk.asp"-->
+<!--#include file="inc/tdk.Asp"-->
 <!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/1.css"/>
     <style>
