@@ -272,7 +272,7 @@ rs.close
 </select>
         </div>
         <div class="col-sm-2">
-        <select class="form-control" id="ckfs"><option value="未设置;0">新房二手户</option>
+        <select class="form-control" id="ckfs"><option value="未设置;0">新房二手房</option>
                 <%
 
 sql="select * from [class_kfs] order by oid desc"
