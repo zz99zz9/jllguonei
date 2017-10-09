@@ -33,6 +33,16 @@ Copyright © 2015-2017 Jones Lang <span class='hidden-xs'>LaSalle, IP, Inc. All 
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
         new WOW().init();
     };
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?52035a32fb12b832d800527d396ef136";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </script>
 <script type="text/javascript">
     $(window).scroll(function() {
