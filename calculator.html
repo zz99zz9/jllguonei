@@ -3532,12 +3532,12 @@ Number.prototype.GetRandom = function () {
                             else if ($fn_PAF.hasClass("fix")) { en = "PAF"; ch = "公积金贷款"; }
                             else { en = "mix"; ch = "组合贷款"; }
 
-                            if (en == "business") {_info.sum.business = $input_business_sum.val();_info.rate.business = $input_business_rate.val();}
-                            else if (en == "PAF") { _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val(); }
-                            else {
-                                _info.sum.business = $input_business_sum.val(); _info.rate.business = $input_business_rate.val();
-                                _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val();
-                            }
+                             if (en == "business") {_info.sum.business = $input_business_sum.val();_info.rate.business = $input_business_rate.val();}
+                             else if (en == "PAF") { _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val(); }
+                             else {
+                                 _info.sum.business = $input_business_sum.val(); _info.rate.business = $input_business_rate.val();
+                                 _info.sum.PAF = $input_PAF_sum.val(); _info.rate.PAF = $input_PAF_rate.val();
+                             }
                             if ($ACPIT.is(":checked")) _info.pattern = "等额本息";
                             else _info.pattern = "等额本金";
 
@@ -3919,7 +3919,7 @@ Number.prototype.GetRandom = function () {
                                     }
                                 })
                                 rate = fn.get_business_rate(key, discount);
-                                $input_business_rate.val(fn.parsePercent(rate));
+                             //   $input_business_rate.val(fn.parsePercent(rate));  //Gavin
                             }
                         },
                         change_PAF_rate: function () {
@@ -3936,7 +3936,7 @@ Number.prototype.GetRandom = function () {
                                     }
                                 })
                                 rate = fn.get_PAF_rate(key);
-                                $input_PAF_rate.val(fn.parsePercent(rate));
+                                //$input_PAF_rate.val(fn.parsePercent(rate));  //Gavin
                             }
                         },
                         initial: function () {
@@ -4254,7 +4254,7 @@ Number.prototype.GetRandom = function () {
                         </div>
                         <div class="line">
                             <span>商业贷款利率</span>
-                            <select id="business-select" class="short input">
+                            <!-- <select id="business-select" class="short input">
                                 <option value="0">手动输入</option>
                                 <option value="11" selected="selected" data-key="15-06-28">最新基准利率</option>
                                 <option value="10" data-key="15-05-10">15-05-10基准利率</option>
@@ -4277,14 +4277,14 @@ Number.prototype.GetRandom = function () {
                                 <option value="2" data-discount="0.8">8折</option>
                                 <option value="1" data-discount="0.7">7折</option>
                             </select>
-                            <b class="separator">=</b>
+                            <b class="separator">=</b> -->
                             <label>
-                                <input id="business-rate" class="input short" type="text" placeholder="利率" value="0" autocomplete="off"><i>%</i>
+                                <input id="business-rate" class="input short" type="text" placeholder="利率" value="4.9" autocomplete="off"><i>%</i>
                             </label>
                         </div>
                         <div class="line" style="display: block;">
                             <span>公积金贷款利率</span>
-                            <select id="PAF-select" class="input short">
+                            <!-- <select id="PAF-select" class="input short">
                                 <option value="0">手动输入</option>
                                 <option value="10" selected="selected" data-key="15-06-28">最新基准利率</option>
                                 <option value="9" data-key="15-05-10">15-05-10基准利率</option>
@@ -4296,9 +4296,9 @@ Number.prototype.GetRandom = function () {
                                 <option value="3" data-key="11-02-09">11-02-09基准利率</option>
                                 <option value="2" data-key="10-12-26">10-12-26基准利率</option>
                                 <option value="1" data-key="10-10-20">10-10-20基准利率</option>
-                            </select>
+                            </select> -->
                             <label>
-                                <input id="PAF-rate" class="input short" type="text" placeholder="利率" value="0" autocomplete="off"><i>%</i>
+                                <input id="PAF-rate" class="input short" type="text" placeholder="利率" value="3.25" autocomplete="off"><i>%</i>
                             </label>
                         </div>
                         <div class="line">

@@ -261,7 +261,7 @@
 .seain ul{float:right;margin-right:15px;}
 .seain ul li{margin-left:15px;font-weight:100;color:#666;float:left;font-size:12px;}
 .seain ul li.on{color:#000;font-weight:bold;}
-.slist{min-height:300px;max-height:500px;overflow:auto;background:#fff;}
+.slist{min-height:0px;max-height:500px;overflow:auto;background:#fff;}
 .btn{background:#000;color:#fff;}
 .btn:hover{background:#000;color:#fff;}
 /********************/
