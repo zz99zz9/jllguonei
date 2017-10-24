@@ -2,12 +2,13 @@
 <!--#include file="inc/Config.Asp"-->
 <!--#include file="inc/Function.asp"-->
 <!--#include file="inc/Inc.Asp"-->
-<!--#include file="inc/header.asp"-->
+
 <%
 dim tdkid
 tdkid=4
 %>
 <!--#include file="./inc/tdk.asp"-->
+<!--#include file="inc/header.asp"-->
     <link rel="stylesheet" href="xgwl/css/2.css"/>
 <!--广告部份-->
 <%cid=request.QueryString("cid")
