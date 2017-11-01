@@ -292,14 +292,14 @@ h2 .pao{position:absolute;top:-100px;left:0px;}
 		<%else%>
 		约¥<%=rs("jgzj")%><%if rs("jgjj")<>"" and rs("jgjj")<>"0" then%>-<%=rs("jgjj")%><%end if%>万起
 	<%end if%></span>
-     <span class="ntxt"><span class="ntxtl">区域<br>类别<br>户型<br></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br><%=rs("clbname")%><br><%
+     <span class="ntxt"><span class="ntxtl">区域<br>类别<br>户型<br><%if rs("mj1")<>"" then%>面积<%end if%></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br><%=rs("clbname")%><br><%
                                                                                                                                                         mystr=split(rs("clxid"),",")
                                                                                                                                                           for i=0 to ubound(mystr)
                                                                                                                                                     if i<4 and mystr(i)<>"" then
                                                                                                                                                     %>
                                                                                                                                                     <em class="trait"><%call Showtd(mystr(i),"lx")%></em>
                                                                                                                                                     <% end if
-                                                                                                                                                     next %><br></span>
+                                                                                                                                                     next %><br><%if rs("mj1")<>"" then%><%=rs("mj1")%> <%if rs("mj2")<>"" and rs("mj2")<>0 then%>- <%=rs("mj2")%><%end if%> 平方米<%end if%></span>
       <div class="c"></div>
         <img src="xgwl/img/temp/bt1.png" class="bt1  b_h" onclick="fdjsq()"> <a href="news.asp?cid=11"><img src="xgwl/img/temp/bt2.png" class="bt2 b_h"></a>
             <div class="c"></div>
