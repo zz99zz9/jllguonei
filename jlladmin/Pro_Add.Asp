@@ -178,6 +178,26 @@ rs.close
     </div>
   </div>
   <div class="form-group row">
+    <label for="jgzj" class="col-sm-2 control-label text-right xglab">面积</label>
+    <div class="col-sm-10 row">
+
+       <div class="col-sm-3 input-group">
+
+                                              <span class="input-group-addon">面积一</span>
+                                              <input class="form-control" type="text" id="mj1">
+                                              <span class="input-group-addon">平方米</span>
+      </div>
+       <div class="col-sm-3 input-group">
+
+                                              <span class="input-group-addon">面积二</span>
+                                              <input class="form-control" type="text" id="mj2">
+                                              <span class="input-group-addon">平方米</span>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="form-group row">
   <label for="cfj" class="col-sm-2 control-label text-right xglab">所属分类</label>
    <div class="col-sm-10 row">
    		<div class="col-sm-2">

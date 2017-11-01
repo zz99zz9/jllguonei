@@ -229,6 +229,24 @@ rs.close
     </div>
   </div>
   <div class="form-group row">
+    <label for="Product_Id" class="col-sm-2 control-label text-right xglab">面积</label>
+    <div class="col-sm-10 row">
+
+       <div class="col-sm-3 input-group">
+                <span class="input-group-addon">面积一</span>
+                 <input class="form-control" type="text" id="mj1" value="<%=ors("mj1")%>">
+              <span class="input-group-addon">平方米</span>
+      </div>
+       <div class="col-sm-3 input-group">
+            <span class="input-group-addon">面积二</span>
+             <input class="form-control" type="text" id="mj2" value="<%=ors("mj2")%>">
+            <span class="input-group-addon">平方米</span>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="form-group row">
   <label for="Product_Id" class="col-sm-2 control-label text-right xglab">相关属性</label>
    <div class="col-sm-10 row">
    		<div class="col-sm-2">

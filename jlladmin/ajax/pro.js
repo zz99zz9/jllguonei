@@ -40,6 +40,8 @@ function update(cg){
 	Description=$("#Description").val();
 	jgzj=$("#jgzj").val();
 	jgjj=$("#jgjj").val();
+	mj1=$("#mj1").val();
+	mj2=$("#mj2").val();
 	cfjname=$("#cfj").val().split(";")[0];
 	cfjid=$("#cfj").val().split(";")[1];
 /*
@@ -104,6 +106,8 @@ var clxid =[];//定义一个数组
 	  content2:content2,
 	  jgzj:jgzj,
 	  jgjj:jgjj,
+	  mj1:mj1,
+	  mj2:mj2,
 	  cfjname:cfjname,
 	  cfjid:cfjid,
 	  crqname:crqname,
