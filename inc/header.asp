@@ -32,10 +32,10 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#example-navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="/guonei/index.asp"><img src="xgwl/img/logo.svg" /></a>  </div>
+            <a class="navbar-brand" href="/guonei/"><img src="xgwl/img/logo.svg" /></a>  </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav XGnav" id=".pc-nav">
-                <li class="active XGli"><a href="index.asp" class="s_link2">首页</a></li>
+                <li class="active XGli"><a href="/guonei/" class="s_link2">首页</a></li>
                 <li class="XGli"><a href="newhouse.asp" class="s_link2">新房 </a></li>
                  <li class="XGli"><a href="entrust.asp" class="s_link2">个人委托</a></li>
                 <li class=" XGli"><a href="news.asp" class="s_link2">热点资讯</a>  </li>
