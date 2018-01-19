@@ -22,7 +22,7 @@ if id="" then
     <link rel="stylesheet" href="xgwl/css/fyed.css"/>
 <!--广告部份-->
 <div class="navwz container">
-<a href="/guonei">JLL</a> &gt; <a href="newhouse.asp"><%=rs("ckfsname")%></a> &gt; <a href="newhouse.asp?bc=<%=rs("bigclassid")%>"><%=rs("bigclassname")%></a> &gt; <a href="#"><%=rs("title")%></a>
+<a href="http://www.jllresidential.cn">JLL</a> &gt; <a href="newhouse.asp"><%=rs("ckfsname")%></a> &gt; <a href="newhouse.asp?bc=<%=rs("bigclassid")%>"><%=rs("bigclassname")%></a> &gt; <a href="#"><%=rs("title")%></a>
 </div>
 
 
@@ -285,7 +285,7 @@ h2 .pao{position:absolute;top:-100px;left:0px;}
           <!---->
 </div>
      <div class="pr wr">
-     <span class="tit"><%=rs("title")%></span>
+     <h1><%=rs("title")%></h1>
      <span class="jiage">
 		<%if rs("jgzj")=0 then%>
 		价格待定

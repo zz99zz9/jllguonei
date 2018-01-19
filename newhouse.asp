@@ -32,7 +32,7 @@ if order="" then order=0
     </style>
 <!--广告部份-->
 <div class="navwz container">
-<a href="index.asp">JLL</a> &gt; <a href="newhouse.asp">新房</a><a href="jllmap.asp" class='hidden-xs'><img src="xgwl/img/temp/dtbtn.gif" class="dtbtn b_h"></a>
+<a href="http://www.jllresidential.cn">JLL</a> &gt; <a href="newhouse.asp">新房</a><a href="jllmap.asp" class='hidden-xs'><img src="xgwl/img/temp/dtbtn.gif" class="dtbtn b_h"></a>
 </div>
 <!--广告部份-->
 <div class="cla container"> <%set rs=Server.CreateObject("ADODB.Recordset")
@@ -67,7 +67,7 @@ if order="" then order=0
 <span class="clat">房价:</span><span class="TAB_CLICKa"><a href="?<%call seaurl(bc,sc,0,lx,lb,order,1)%>" <%call ison(fj,0)%>>不限</a>
 
 <%do while not rs.eof%>
-     <a href="?<%call seaurl(bc,sc,rs("cid"),lx,lb,order,1)%>" <%call ison(fj,rs("cid"))%>><%=rs("cname")%></a>
+     <a href="?<%call seaurl(bc,sc,rs("cid"),lx,lb,order,1)%>" rel="nofollow" <%call ison(fj,rs("cid"))%>><%=rs("cname")%></a>
        <%rs.movenext
 
     loop
@@ -80,7 +80,7 @@ if order="" then order=0
 <span class="clat">户型:</span><span class="TAB_CLICKa"><a href="?<%call seaurl(bc,sc,fj,0,lb,order,1)%>" <%call ison(lx,0)%>>不限</a>
 
 <%do while not rs.eof%>
-     <a href="?<%call seaurl(bc,sc,fj,rs("cid"),lb,order,1)%>" <%call ison(lx,rs("cid"))%>><%=rs("cname")%></a>
+     <a href="?<%call seaurl(bc,sc,fj,rs("cid"),lb,order,1)%>" rel="nofollow" <%call ison(lx,rs("cid"))%>><%=rs("cname")%></a>
        <%rs.movenext
     loop
 	rs.close
@@ -92,7 +92,7 @@ if order="" then order=0
 <span class="clat">类别:</span><span class="TAB_CLICKa"><a href="?<%call seaurl(bc,sc,fj,lx,0,order,1)%>" <%call ison(lb,0)%>>不限</a>
 
 <%do while not rs.eof%>
-     <a href="?<%call seaurl(bc,sc,fj,lx,rs("cid"),order,1)%>" <%call ison(lb,rs("cid"))%>><%=rs("cname")%></a>
+     <a href="?<%call seaurl(bc,sc,fj,lx,rs("cid"),order,1)%>" rel="nofollow" <%call ison(lb,rs("cid"))%>><%=rs("cname")%></a>
        <%rs.movenext
 
     loop
@@ -100,7 +100,7 @@ if order="" then order=0
 	set rs=nothing%>
 </div>
 <div class="cla2 container">
-<span class="TAB_CLICKa"><a class="<%if order=0 then%>on<%end if%> hand" href="?<%call seaurl(bc,sc,fj,lx,lb,0,1)%>">热门推荐</a><a class="hand <%if order=1 then%>on<%end if%>" href="?<%call seaurl(bc,sc,fj,lx,lb,1,1)%>">总价</a><a class="hand <%if order=2 then%>on<%end if%>" href="?<%call seaurl(bc,sc,fj,lx,lb,2,1)%>">时间</a></span>
+<span class="TAB_CLICKa"><a class="<%if order=0 then%>on<%end if%> hand" href="?<%call seaurl(bc,sc,fj,lx,lb,0,1)%>" rel="nofollow">热门推荐</a><a class="hand <%if order=1 then%>on<%end if%>" href="?<%call seaurl(bc,sc,fj,lx,lb,1,1)%>" rel="nofollow">总价</a><a class="hand <%if order=2 then%>on<%end if%>" href="?<%call seaurl(bc,sc,fj,lx,lb,2,1)%>" rel="nofollow">时间</a></span>
 </div>
 <div class="c"></div>
 <%set rs=Server.CreateObject("ADODB.Recordset")

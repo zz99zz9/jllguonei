@@ -313,7 +313,7 @@
 .wr .stitline .smh:hover{color:#f00;}
 
 /*房源介绍页*/
-.wr h1{font-size:24px;color:#000;margin-bottom:20px;}
+.wr h1{font-size:24px;color:#000;margin-bottom:20px;font-weight:bold;}
 .wr .stit,.wr .sjg,.wr .stxt,.wr2 .stit,.wr2 .sjg,.wr2 .stxt{display:block;float:left;font-size:14px;margin-bottom:10px;}
 .wr .stit,.wr2 .stit{width:80px;}
 .wr .sjg,.wr2 .sjg{width:260px;color:#E92100;}

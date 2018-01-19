@@ -16,7 +16,7 @@ if rsnew("description")<>"" then d=rsnew("description")%>
 
 <div class="w">
 
-  <div class="position"><a href="index.asp">JLL</a> &gt; <a href="news.asp">热点资讯  &gt; <a href="#"><%=rsnew("classname")%>
+  <div class="position"><a href="http://www.jllresidential.cn">JLL</a> &gt; <a href="news.asp">热点资讯  &gt; <a href="#"><%=rsnew("classname")%>
   </a> </div>
 </div>
 

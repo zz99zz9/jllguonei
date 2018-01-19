@@ -1231,7 +1231,7 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .s
 }
 
 h1, .h1 {
-    font-size: 36px
+    font-size: 36px;
 }
 
 h2, .h2 {

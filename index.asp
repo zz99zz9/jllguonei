@@ -89,7 +89,7 @@ tdkid=1
             </li>
             
             
-            <li class="col-md-3 wow fadeInUp col-xs-6"><i class="part1-ico part1-3 tra6 b_h tf360"><a href="news.asp" class="ihref"></a></i><h2>热点资讯</h2><span class="txt">最新资讯 专业洞察</span><a href="news.asp" class="hidden-xs">更多 <em class="more-arr tra">&gt;</em></a></li>
+            <li class="col-md-3 wow fadeInUp col-xs-6"><i class="part1-ico part1-3 tra6 b_h tf360"><a href="news.asp" rel="nofollow" class="ihref"></a></i><h2>热点资讯</h2><span class="txt">最新资讯 专业洞察</span><a href="news.asp" rel="nofollow" class="hidden-xs">更多 <em class="more-arr tra">&gt;</em></a></li>
             <li class="col-md-3 wow fadeInUp col-xs-6"><i class="part1-ico part1-4 tra6 b_h tf360"><a href="life_judge.asp" class="ihref"></a></i><h2>生活·品鉴</h2><span class="txt">品质生活 经典传承</span><a href="life_judge.asp" class="hidden-xs">更多 <em class="more-arr tra">&gt;</em></a></li>
             <li class="col-md-3 wow fadeInUp col-xs-6">
             <i class="part1-ico part1-2 tra6 b_h tf360"><a href="entrust.asp" class="ihref"></a></i>
@@ -145,7 +145,7 @@ tdkid=1
 <div class="part4">
     <div class="container">
         <div class="row">
-<div class="titline"><div class="tit tit3">热点资讯 <img src="xgwl/img/bline.png" class="hidden-xs"></div><div class="txt hidden-xs">news<br>专业洞察把握行业脉搏</div> <a href="2.asp" class="more hidden-xs"> &gt;</a></div>
+<div class="titline"><div class="tit tit3">热点资讯 <img src="xgwl/img/bline.png" class="hidden-xs"></div><div class="txt hidden-xs">news<br>专业洞察把握行业脉搏</div> <a href="life_judge.asp" class="more hidden-xs"> &gt;</a></div>
 <%
 set rsnew=Server.CreateObject("ADODB.Recordset")
 sqlnew="select top 3 * from [prod] where classid=15 order by oid desc,prod_id desc"

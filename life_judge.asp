@@ -25,7 +25,7 @@ if cid="" then cid=0
 
 rsnew.Open sqlnew,conn,1,1%>
 <div class="navwz container">
-<a href="index.asp">JLL</a> &gt; <a href="life_judge.asp">生活品鉴</a>
+<a href="http://www.jllresidential.cn">JLL</a> &gt; <a href="life_judge.asp">生活品鉴</a>
 </div>
 <!--广告部份-->
 <div class="ed2">

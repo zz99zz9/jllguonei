@@ -13,7 +13,7 @@ tdkid=6
     <style>.nphone {    background:url("xgwl/img/tel.png") no-repeat;}</style>
 <!--广告部份-->
 <div class="navwz container">
-<a href="index.asp">JLL</a> &gt; <a href="adviser.asp">豪宅顾问</a>
+<a href="http://www.jllresidential.cn">JLL</a> &gt; <a href="adviser.asp">豪宅顾问</a>
 </div>
 <!--广告部份--
 <div class="cla container">
