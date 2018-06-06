@@ -36,11 +36,13 @@
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav XGnav" id=".pc-nav">
                 <li class="active XGli"><a href="/guonei/" class="s_link2">首页</a></li>
-                <li class="XGli"><a href="newhouse.asp" class="s_link2">新房 </a></li>
+                <li class="XGli"><a href="newhouse.asp" class="s_link2">新房</a></li>
+                <li class="XGli"><a href="http://www.jllresidential.cn/rent/" class="s_link2">租赁</a></li>
                  <li class="XGli"><a href="entrust.asp" class="s_link2">个人委托</a></li>
                 <li class=" XGli"><a href="news.asp" class="s_link2" rel="nofollow">热点资讯</a>  </li>
-                <li class=" XGli"><a href="life_judge.asp" class="s_link2">生活品鉴</a>  </li>
-                <li class=" XGli"><a href="adviser.asp" class="s_link2"  rel="nofollow">豪宅顾问</a> </li>
+                <!--<li class=" XGli"><a href="life_judge.asp" class="s_link2">生活品鉴</a>  </li>-->
+                <li class=" XGli"><a href="http://www.jllresidential.cn/rent/for-landlord.asp" class="s_link2"  rel="nofollow">投放房源</a> </li>
+                <!--<li class=" XGli"><a href="adviser.asp" class="s_link2"  rel="nofollow">豪宅顾问</a> </li>---->
                
               <!--  <li class=" XGli"><a href="http://www.jllresidential.cn/intl" target="_blank" class="s_link2" >国际住宅</a> </li>-->
             </ul>
