@@ -125,7 +125,7 @@ tdkid=1
         <div class="row">
 <div class="titline"><div class="tit tit2">个人委托<img src="xgwl/img/bline.png" class="hidden-xs"></div><div class="txt hidden-xs">Second-hand housing<br>为懂生活的你臻选精品佳作</div> <a href="entrust.asp" class="more hidden-xs"> &gt;</a></div>
 <%set rs=Server.CreateObject("ADODB.Recordset")
-                        sql="select top 3 * from [Table_Product] where Passed=true and elite=true and ckfsid='1' order by orderid desc,articleid desc"
+                        sql="select top 6 * from [Table_Product] where Passed=true and elite=true and ckfsid='1' order by orderid desc,articleid desc"
                         rs.Open sql,conn,1,1
                         do while not rs.eof %>
 <div class="col-md-4 wow fadeInUp">
