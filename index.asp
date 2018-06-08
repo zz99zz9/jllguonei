@@ -127,7 +127,9 @@ tdkid=1
 <%set rs=Server.CreateObject("ADODB.Recordset")
                         sql="select top 6 * from [Table_Product] where Passed=true and elite=true and ckfsid='1' order by orderid desc,articleid desc"
                         rs.Open sql,conn,1,1
+                        i=1
                         do while not rs.eof %>
+                    <%if i=4 then%><DIV class="c"><%end if%>
 <div class="col-md-4 wow fadeInUp">
     <a class="bborder b_c tra" href="housedetails.asp?id=<%=rs("articleid")%>" style="color:#333;">
     <img src="<%=rs("defaultpicurl")%>" class="tra6"><span class="tit"><%=rs("title")%></span><span class="txt"><%=rs("Product_Id")%></span>
