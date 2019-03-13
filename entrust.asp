@@ -149,7 +149,7 @@ rs.Open sql,conn,1,1%>
     if request("page")="" then page=1
     rs.AbsolutePage=page '设置本页页码
     i=0
-    do while not rs.eof and i<rs.PageSize
+    do while not rs.eof 'and i<rs.PageSize
     %>
     <li><a href="housedetails.asp?id=<%=rs("articleid")%>" class="fpic"><!--<i class="hot"></i>--><img src="<%=rs("defaultpicurl")%>" class="fangpic b_h"></a><div class="ninfo"><a  href="housedetails.asp?id=<%=rs("articleid")%>" class="ntit b_h"><%=rs("title")%></a><span class="ntxt"><span class="ntxtl">区域<br>户型<br>豪宅类型<br></span><span class="ntxtr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%><br>
 <%
