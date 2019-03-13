@@ -60,7 +60,7 @@ rs.open sql,conn,1,1
 
             <td > 
               <a href="team_mod.asp?ID=<%=rs("id")%>&classid=<%=classid%>" class="btn btn-success btn-xs">修改</a>
-              <a href="?id=<%=rs("id")%>&Action=Del&classid=<%=classid%>" onClick="return ConfirmDel();" class="btn btn-danger btn-xs">删除</a> </td>
+              <a href="?pid=<%=rs("id")%>&Action=Del&classid=<%=classid%>" onClick="return ConfirmDel();" class="btn btn-danger btn-xs">删除</a> </td>
           </tr>
           <%
 	i=i+1
