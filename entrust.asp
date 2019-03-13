@@ -131,7 +131,7 @@ select case order
 	sql=sql+"updatetime,"
 end select
 sql=sql+"articleid desc"
-'response.write sql
+response.write sql
 rs.Open sql,conn,1,1%>
 <!--part1-->
 <div class="part1">
